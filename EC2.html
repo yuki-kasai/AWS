@@ -47,3 +47,52 @@ EC2とは
                                     キーペアを利用して自身がダウンロードした秘密鍵をマッチした公開鍵を有するインスタンスにアクセスする
 
         EC2のバックアップ
+
+EC2実践編
+
+    ハンズオンの流れ
+
+        EC2インスタンスを新規に立ち上げる
+                    ↓
+        EC2インスタンスにSSH接続
+                    ↓
+        EC2インスタンスにApacheをインストールする
+                    ↓
+        Apache内にindex.htmlを作成する
+
+
+    Linuxコマンド
+
+        sudo su -
+
+            ルート権限い移動してインストール操作を可能にする
+
+        yum update -y
+
+            ソフトウェアの更新状況を確認する
+
+        yum install httpd -y
+
+            サーバーにApacheをインストールする
+
+        service httpd start
+
+            Apacheを立ち上げる
+
+        service httpd restart
+
+            Apacheを再度立ち上げる
+
+    nanoエディタの操作
+
+        nano index.html
+
+            nanoエディタを利用してindex.htmlファイルを作成・開く
+
+        Ctrl ＋ X
+
+            nanoエディタを終了する
+
+        Y
+
+            nanoエディタで編集していたファイルの保存
